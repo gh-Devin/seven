@@ -10,7 +10,7 @@
       class="flex items-center justify-start space-x-3 rtl:space-x-reverse">
       {{ $logoW := $logoInfo.customLogoWidth | default 130 }}
       <p class="w-[{{ $logoW }}px]">
-        {{ $logoH := $logoInfo.customLogoHeight | default 56 }}
+        {{ $logoH := $logoInfo.customLogoHeight | default 400 }}
         {{ if ge $logoH 400 }}
           {{ $logoH = 400 }}
         {{ end }}
