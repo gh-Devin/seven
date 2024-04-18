@@ -11,8 +11,8 @@
       {{ $logoW := $logoInfo.customLogoWidth | default 130 }}
       <p class="w-[{{ $logoW }}px]">
         {{ $logoH := $logoInfo.customLogoHeight | default 56 }}
-        {{ if ge $logoH 56 }}
-          {{ $logoH = 56 }}
+        {{ if ge $logoH 400 }}
+          {{ $logoH = 400 }}
         {{ end }}
         <img
           id="logo-light-icon"
